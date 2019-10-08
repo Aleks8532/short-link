@@ -17,9 +17,9 @@ class CreateLinksTable extends Migration
             $table->bigIncrements('id');
             $table->mediumText('linkFull');
             $table->mediumText('linkAlias');
-            $table->timestamp('lifetime');
-            $table->boolean('isCommercial');;
-            $table->integer('visitColumn');;
+            $table->integer('lifetime');
+            $table->boolean('isCommercial');
+            $table->integer('visitColumn')->nullable();
             $table->timestamps();
         });
     }

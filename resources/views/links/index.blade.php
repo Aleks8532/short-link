@@ -12,23 +12,24 @@
                 Сокращатель ссылок
             </div>
 
-            <form class="input-data">
+            <form class="input-data" id="shot-link" method="POST">
+                {{ csrf_field() }}
                 <fieldset>
                     <div class="item">
-                        <label for="link-input">Исходная ссылка</label>
-                        <input id="link-input" class="link-input" type="text">
+                        <label for="link-input" >Исходная ссылка</label>
+                        <input id="link-input" required name="link-input" class="link-input" type="text">
                     </div>
                     <div class="item">
-                        <label for="self-text">Свой текст</label>
-                        <input id="self-text" class="link-input" type="text">
+                        <label for="self-text">Псевдоним ссылки</label>
+                        <input id="self-text" name="self-text" class="link-input" type="text">
                     </div>
                     <div class="item">
                         <label for="lifetime">Срок жизни ссылки в секундах</label>
-                        <input id="lifetime" class="link-input" type="number">
+                        <input id="lifetime" name="lifetime" class="link-input" type="number">
                     </div>
                     <div class="item">
                         <label for="commercial">Коммерческая ссылка</label>
-                        <input id="commercial" class="link-input" type="checkbox">
+                        <input id="commercial" name="commercial" class="link-input" type="checkbox">
                     </div>
                 </fieldset>
                 <button class="button">Уменьшить</button>
@@ -52,5 +53,5 @@
 @endsection
 
 @section('footer')
- <script src=""></script>
+ <script src="./js/app.js"></script>
 @endsection

@@ -10,4 +10,6 @@ class LinksController extends Controller
     public function index(){
         return view('links.index');
     }
+
+
 }
