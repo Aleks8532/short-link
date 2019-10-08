@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 /**
+ * Статистика посещений
  * @property int $id
  * @property int $link_id
  * @property int $image_id

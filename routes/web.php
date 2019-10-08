@@ -17,3 +17,5 @@
 
 Route::get('/', 'LinksController@index');
 Route::post('/shortening', 'Ajax\LinksController@add');
+
+Route::get('/i/{code}', 'LinksController@redirect');

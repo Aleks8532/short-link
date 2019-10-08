@@ -13,10 +13,10 @@ $(document).ready(function () {
                 if (data.error) {
                     switch (data.error) {
                         case 'link_exist':
-                            alert('Псевдоним ссылки уже существует')
+                            alert('Псевдоним ссылки уже существует');
                             break;
                         case 'unknown_error':
-                            alert('Непредвиденная ошибка')
+                            alert('Непредвиденная ошибка');
                             break;
                     }
                 } else {
@@ -25,8 +25,7 @@ $(document).ready(function () {
                 }
             },
             error: function () {
-                $('#senderror').show();
-                $('#sendmessage').hide();
+                alert('Непредвиденная ошибка');
             }
         });
     });

@@ -11,5 +11,8 @@ class LinksController extends Controller
         return view('links.index');
     }
 
-
+    public function redirect(Request $request, $aliasLink)
+    {
+        // TODO проверка существования и активности короткой ссылки + отметка в статистике
+    }
 }
